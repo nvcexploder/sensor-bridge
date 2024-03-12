@@ -1,4 +1,4 @@
-module github.com/willgorman/sensor-bridge
+module github.com/nvcexploder/sensor-bridge
 
 go 1.16
 
