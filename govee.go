@@ -16,7 +16,7 @@ type AdvParser interface {
 type H5102Parser struct{}
 
 func (p H5102Parser) Parse(a ble.Advertisement) (*Reading, error) {
-	if !strings.HasPrefix(a.LocalName(), "GVH5102") {
+	if !strings.HasPrefix(a.LocalName(), "GVH5") {
 		return &Reading{}, errors.New("advertisement from wrong device type")
 	}
 
